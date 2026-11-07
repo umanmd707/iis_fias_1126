@@ -1,0 +1,33 @@
+OLS on paired percent change; cluster-robust SE by master seed
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          energy_P2_pct   R-squared:                       0.945
+Model:                            OLS   Adj. R-squared:                  0.943
+Method:                 Least Squares   F-statistic:                     198.0
+Date:                Sat, 07 Nov 2026   Prob (F-statistic):           3.49e-23
+Time:                        05:09:13   Log-Likelihood:                -522.32
+No. Observations:                 270   AIC:                             1063.
+Df Residuals:                     261   BIC:                             1095.
+Df Model:                           8                                         
+Covariance Type:              cluster                                         
+====================================================================================================
+                                       coef    std err          z      P>|z|      [0.025      0.975]
+----------------------------------------------------------------------------------------------------
+Intercept                          -16.2945      0.445    -36.651      0.000     -17.166     -15.423
+C(rf)[T.3]                          13.5901      0.443     30.650      0.000      12.721      14.459
+C(rf)[T.5]                          16.2240      0.463     35.021      0.000      15.316      17.132
+C(workload)[T.low]                   1.0618      0.209      5.085      0.000       0.653       1.471
+C(workload)[T.medium]                0.6746      0.116      5.825      0.000       0.448       0.902
+C(rf)[T.3]:C(workload)[T.low]        0.0760      0.357      0.213      0.831      -0.624       0.776
+C(rf)[T.5]:C(workload)[T.low]       -1.3029      0.340     -3.836      0.000      -1.969      -0.637
+C(rf)[T.3]:C(workload)[T.medium]    -0.0340      0.278     -0.122      0.903      -0.580       0.512
+C(rf)[T.5]:C(workload)[T.medium]    -0.5600      0.302     -1.857      0.063      -1.151       0.031
+==============================================================================
+Omnibus:                       14.763   Durbin-Watson:                   1.022
+Prob(Omnibus):                  0.001   Jarque-Bera (JB):               17.548
+Skew:                          -0.463   Prob(JB):                     0.000155
+Kurtosis:                       3.837   Cond. No.                         13.9
+==============================================================================
+
+Notes:
+[1] Standard Errors are robust to cluster correlation (cluster)

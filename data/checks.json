@@ -1,0 +1,11 @@
+{
+  "run_count": 1350,
+  "matched_pairs": 270,
+  "seed_blocks": 30,
+  "P0_P1_exact_parity": true,
+  "P2_pairs_below_5pct_makespan_penalty": 270,
+  "P2_pairs_with_electricity_reduction": 219,
+  "rf1_minus_rf5_energy_effect_percentage_points": -15.603033436183745,
+  "rf1_minus_rf5_95CI_lower": -16.45295258123065,
+  "rf1_minus_rf5_95CI_upper": -14.753114291136841
+}
